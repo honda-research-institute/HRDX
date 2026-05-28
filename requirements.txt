@@ -1,0 +1,13 @@
+# Pip dependencies for the maptracker conda env. PyTorch, mmcv, mmengine,
+# mmdet, mmsegmentation, and mmdetection3d are installed separately per
+# docs/installation.md (the install order matters for CUDA-extension wheels),
+# so they are intentionally NOT pinned here.
+av2==0.2.1
+nuscenes-devkit>=1.1.10
+einops==0.6.1
+numpy==1.24.4
+numba==0.58.1
+Shapely==1.8.5
+yapf==0.40.1
+setuptools==65.5.1
+imageio-ffmpeg==0.4.9
