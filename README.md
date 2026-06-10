@@ -2,6 +2,8 @@
 
 ![HRDX sample scene](resources/HRDX_sample.png)
 
+**Dataset download & details:** [usa.honda-ri.com/hrdx](https://usa.honda-ri.com/hrdx)
+
 This repository contains the code and experiment configurations used for the HRDX paper, built on top of MapTracker for online vector HD-map construction.
 
 HRDX is a large-scale benchmark for vectorized HD mapping with:
@@ -70,6 +72,8 @@ setup, prerequisites (driver / GPU / disk), a verify-the-install check, and
 the `environment.yml` fallback.
 
 ## Data Preparation
+
+Download the HRDX dataset from the official website: [usa.honda-ri.com/hrdx](https://usa.honda-ri.com/hrdx).
 
 HRDX ships as a refined release — per-sample pickles plus aligned image / LiDAR / aerial roots. Place the bundle under `./datasets/RDX/` so the shipped configs (which use `./datasets/RDX/...` relative paths) work unmodified.
 

@@ -7,6 +7,9 @@ We noticed that the track generation results can be slighly different when runni
 
 ## HRDX
 
+Download the HRDX dataset from the official website:
+[usa.honda-ri.com/hrdx](https://usa.honda-ri.com/hrdx).
+
 HRDX ships as a refined release: per-sample pickles plus aligned
 image / LiDAR / aerial roots. Place the bundle under `./datasets/RDX/`
 so the shipped configs (which reference `./datasets/RDX/...` relative
