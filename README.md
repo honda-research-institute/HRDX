@@ -1,12 +1,13 @@
 # HRDX: A Large-Scale Vector HD-Map Dataset
 
-![HRDX sample scene](resources/HRDX_sample.png)
+[![Paper](https://img.shields.io/badge/arXiv-2606.17080-b31b1b.svg)](https://arxiv.org/abs/2606.17080)
+[![Website](https://img.shields.io/badge/Website-usa.honda--ri.com%2Fhrdx-green)](https://usa.honda-ri.com/hrdx)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-yellow.svg)](LICENSE_GPL)
 
-**Dataset download & details:** [usa.honda-ri.com/hrdx](https://usa.honda-ri.com/hrdx)
+**Sahith Reddy Chada, Isht Dwivedi, Nirav Savaliya**
 
-This repository contains the code and experiment configurations used for the HRDX paper, built on top of MapTracker for online vector HD-map construction.
 
-HRDX is a large-scale benchmark for vectorized HD mapping with:
+Honda RDX (HRDX) is a large-scale benchmark for vectorized HD mapping with:
 
 - 40+ hours of driving data
 - about 1,400 km of minimally overlapping routes
@@ -15,6 +16,8 @@ HRDX is a large-scale benchmark for vectorized HD mapping with:
 - centimeter-level GNSS/INS localization
 - aligned aerial orthoimagery
 - 10 vector map classes with rich semantic and topological attributes
+
+**Dataset download & details:** [usa.honda-ri.com/hrdx](https://usa.honda-ri.com/hrdx) &nbsp;·&nbsp; **Paper:** [arxiv.org/abs/2606.17080](https://arxiv.org/abs/2606.17080)
 
 In addition to the dataset support, this repository contains MapTracker-based training pipelines for:
 
@@ -25,6 +28,8 @@ In addition to the dataset support, this repository contains MapTracker-based tr
 - HRDX evaluation with geometry and attribute-aware metrics
 
 This codebase is derived from the original MapTracker project and has been extended for HRDX, aerial supervision, newer MMEngine-based training, and updated experiment workflows.
+
+![HRDX sample scene](resources/HRDX_sample.png)
 
 ## Overview
 
@@ -65,7 +70,6 @@ Compared with the original upstream MapTracker release, this repository is cente
   Installation, data preparation, and usage guides.
 
 ## Installation
-
 
 See [`docs/installation.md`](docs/installation.md) for the full step-by-step
 setup, prerequisites (driver / GPU / disk), a verify-the-install check, and
@@ -213,7 +217,16 @@ This codebase builds on several open-source projects, especially:
 
 ## Citation
 
-If you use this repository or the HRDX benchmark in academic work, cite the corresponding HRDX paper.
+If you use this repository or the HRDX benchmark in academic work, please cite:
+
+```bibtex
+@article{chada2026hrdx,
+  title={HRDX: A Large-Scale Vector HD-Map Dataset},
+  author={Chada, Sahith Reddy and Dwivedi, Isht and Savaliya, Nirav},
+  journal={arXiv preprint arXiv:2606.17080},
+  year={2026}
+}
+```
 
 For the upstream base model, you may also cite the original MapTracker paper:
 
